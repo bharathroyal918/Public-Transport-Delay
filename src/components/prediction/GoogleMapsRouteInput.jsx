@@ -8,7 +8,7 @@ import { MapPin, Navigation, Loader2, Clock, Route as RouteIcon, Map } from "luc
 import { toast } from 'sonner';
 import { useLoadScript, GoogleMap, DirectionsRenderer } from '@react-google-maps/api';
 
-const GOOGLE_MAPS_API_KEY = import.meta.env.VITE_GOOGLE_MAPS_API_KEY || "AIzaSyCi3U0TUQmlrrrVOaR-aG6k4KNusN8DOKg";
+const GOOGLE_MAPS_API_KEY = import.meta.env.VITE_GOOGLE_MAPS_API_KEY || "";
 const LIBRARIES = ['places'];
 
 const mapContainerStyle = {
