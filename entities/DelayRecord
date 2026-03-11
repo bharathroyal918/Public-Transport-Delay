@@ -1,0 +1,114 @@
+{
+  "name": "DelayRecord",
+  "type": "object",
+  "properties": {
+    "route_id": {
+      "type": "string",
+      "description": "Reference to route"
+    },
+    "route_name": {
+      "type": "string",
+      "description": "Name of the route"
+    },
+    "route_type": {
+      "type": "string",
+      "enum": [
+        "bus",
+        "train",
+        "metro"
+      ]
+    },
+    "delay_minutes": {
+      "type": "number",
+      "description": "Actual delay in minutes"
+    },
+    "delay_category": {
+      "type": "string",
+      "enum": [
+        "on_time",
+        "minor",
+        "moderate",
+        "severe"
+      ],
+      "description": "Delay severity category"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "day_of_week": {
+      "type": "string",
+      "enum": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ]
+    },
+    "hour": {
+      "type": "number",
+      "description": "Hour of day (0-23)"
+    },
+    "is_peak_hour": {
+      "type": "boolean"
+    },
+    "temperature_c": {
+      "type": "number",
+      "description": "Temperature in Celsius"
+    },
+    "precipitation_mm": {
+      "type": "number",
+      "description": "Rainfall in mm"
+    },
+    "wind_speed_kmh": {
+      "type": "number",
+      "description": "Wind speed in km/h"
+    },
+    "visibility_km": {
+      "type": "number",
+      "description": "Visibility in km"
+    },
+    "weather_condition": {
+      "type": "string",
+      "enum": [
+        "clear",
+        "cloudy",
+        "rainy",
+        "stormy",
+        "foggy",
+        "snowy"
+      ]
+    },
+    "has_event": {
+      "type": "boolean",
+      "description": "Whether there's a nearby event"
+    },
+    "event_type": {
+      "type": "string",
+      "enum": [
+        "none",
+        "sports",
+        "concert",
+        "festival",
+        "conference",
+        "parade"
+      ]
+    },
+    "event_crowd_size": {
+      "type": "number",
+      "description": "Estimated crowd size"
+    },
+    "traffic_congestion_level": {
+      "type": "number",
+      "description": "Traffic level 1-10"
+    }
+  },
+  "required": [
+    "route_name",
+    "delay_minutes",
+    "date"
+  ]
+}

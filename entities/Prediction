@@ -1,0 +1,43 @@
+{
+  "name": "Prediction",
+  "type": "object",
+  "properties": {
+    "route_id": {
+      "type": "string"
+    },
+    "route_name": {
+      "type": "string"
+    },
+    "predicted_delay_minutes": {
+      "type": "number"
+    },
+    "predicted_category": {
+      "type": "string",
+      "enum": [
+        "on_time",
+        "minor",
+        "moderate",
+        "severe"
+      ]
+    },
+    "confidence_score": {
+      "type": "number",
+      "description": "Prediction confidence 0-100"
+    },
+    "model_used": {
+      "type": "string"
+    },
+    "input_parameters": {
+      "type": "object",
+      "description": "Input features used for prediction"
+    },
+    "prediction_date": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "route_name",
+    "predicted_delay_minutes"
+  ]
+}

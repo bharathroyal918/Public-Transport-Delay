@@ -1,0 +1,56 @@
+{
+  "name": "Route",
+  "type": "object",
+  "properties": {
+    "route_name": {
+      "type": "string",
+      "description": "Name of the transit route"
+    },
+    "route_type": {
+      "type": "string",
+      "enum": [
+        "bus",
+        "train",
+        "metro"
+      ],
+      "description": "Type of transport"
+    },
+    "origin": {
+      "type": "string",
+      "description": "Starting point"
+    },
+    "destination": {
+      "type": "string",
+      "description": "End point"
+    },
+    "distance_km": {
+      "type": "number",
+      "description": "Route distance in kilometers"
+    },
+    "estimated_duration_mins": {
+      "type": "number",
+      "description": "Normal travel time in minutes"
+    },
+    "stops_count": {
+      "type": "number",
+      "description": "Number of stops on route"
+    },
+    "peak_hours": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Peak hour times"
+    },
+    "avg_daily_passengers": {
+      "type": "number",
+      "description": "Average daily passenger count"
+    }
+  },
+  "required": [
+    "route_name",
+    "route_type",
+    "origin",
+    "destination"
+  ]
+}
