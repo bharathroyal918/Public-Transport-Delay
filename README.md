@@ -43,10 +43,10 @@ Supabase → Project Settings → API:
 ### Step 4: Add to `.env`
 ```env
 VITE_SUPABASE_URL=https://axuyaockmuflkbhrfett.supabase.co
-VITE_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImF4dXlhb2NrbXVmbGtiaHJmZXR0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzMyMDI5NzksImV4cCI6MjA4ODc3ODk3OX0.a0LOiVd3q6JAjynR2JyN6QWWKpKwx7pqopn39__ljPQ
+
 
 # Google Maps API Key (optional - for route input on Predictions page)
-VITE_GOOGLE_MAPS_API_KEY="AIzaSyCi3U0TUQmlrrrVOaR-aG6k4KNusN8DOKg"
+VITE_GOOGLE_MAPS_API_KEY="Your API key"
 ```
 
 Restart `npm run dev` — the app will now use Supabase automatically.
