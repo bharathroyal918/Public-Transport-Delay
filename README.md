@@ -93,7 +93,7 @@ npm install
 
 ---
 
-## What Changed from Base44
+## What Changed 
 
 | File | Change |
 |---|---|
@@ -106,10 +106,8 @@ npm install
 | `src/pages/Login.jsx` | NEW — Login page |
 | `src/pages/Signup.jsx` | NEW — Signup page |
 | `src/pages/ForgotPassword.jsx` | NEW — Password reset page |
-| `src/lib/NavigationTracker.jsx` | Removed Base44 dependency |
-| `src/lib/PageNotFound.jsx` | Removed Base44 dependency |
-| `vite.config.js` | Removed @base44 plugin, fixed @ alias |
-| `package.json` | Removed @base44 packages, added @supabase/supabase-js |
+| `vite.config.js` | fixed @ alias |
+| `package.json` | added @supabase/supabase-js |
 | `supabase_schema.sql` | NEW — Database schema |
 
 ---
